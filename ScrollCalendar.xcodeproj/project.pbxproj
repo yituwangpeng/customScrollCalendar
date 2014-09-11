@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FB000F919C1C8600003A249 /* calendar_selected_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB000F619C1C8600003A249 /* calendar_selected_bg@2x.png */; };
+		5FB000FA19C1C8600003A249 /* calendar_today_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB000F719C1C8600003A249 /* calendar_today_bg@2x.png */; };
+		5FB000FB19C1C8600003A249 /* calendar_today_hibg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB000F819C1C8600003A249 /* calendar_today_hibg@2x.png */; };
+		720C28C3190BAA1500CBE375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720C28C2190BAA1500CBE375 /* Foundation.framework */; };
+		720C28C5190BAA1500CBE375 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720C28C4190BAA1500CBE375 /* CoreGraphics.framework */; };
+		720C28C7190BAA1500CBE375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720C28C6190BAA1500CBE375 /* UIKit.framework */; };
+		720C28C9190BAA1500CBE375 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720C28C8190BAA1500CBE375 /* CoreData.framework */; };
+		720C28CF190BAA1500CBE375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 720C28CD190BAA1500CBE375 /* InfoPlist.strings */; };
+		720C28D1190BAA1500CBE375 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C28D0190BAA1500CBE375 /* main.m */; };
+		720C28D5190BAA1500CBE375 /* WPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C28D4190BAA1500CBE375 /* WPAppDelegate.m */; };
+		720C28D8190BAA1500CBE375 /* ScrollCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 720C28D6190BAA1500CBE375 /* ScrollCalendar.xcdatamodeld */; };
+		720C28DA190BAA1500CBE375 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720C28D9190BAA1500CBE375 /* Images.xcassets */; };
+		720C28E1190BAA1500CBE375 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720C28E0190BAA1500CBE375 /* XCTest.framework */; };
+		720C28E2190BAA1500CBE375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720C28C2190BAA1500CBE375 /* Foundation.framework */; };
+		720C28E3190BAA1500CBE375 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720C28C6190BAA1500CBE375 /* UIKit.framework */; };
+		720C28E4190BAA1500CBE375 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720C28C8190BAA1500CBE375 /* CoreData.framework */; };
+		720C28EC190BAA1500CBE375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 720C28EA190BAA1500CBE375 /* InfoPlist.strings */; };
+		720C28EE190BAA1500CBE375 /* ScrollCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C28ED190BAA1500CBE375 /* ScrollCalendarTests.m */; };
+		720C28FC190BAA4800CBE375 /* ADScrollCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C28F9190BAA4800CBE375 /* ADScrollCalendar.m */; };
+		720C28FD190BAA4800CBE375 /* CalendarDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C28FB190BAA4800CBE375 /* CalendarDateUtil.m */; };
+		720C2900190BAA5500CBE375 /* WPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C28FF190BAA5500CBE375 /* WPRootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		720C28E5190BAA1500CBE375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 720C28B7190BAA1400CBE375 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 720C28BE190BAA1500CBE375;
+			remoteInfo = ScrollCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5FB000F619C1C8600003A249 /* calendar_selected_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_selected_bg@2x.png"; sourceTree = "<group>"; };
+		5FB000F719C1C8600003A249 /* calendar_today_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_today_bg@2x.png"; sourceTree = "<group>"; };
+		5FB000F819C1C8600003A249 /* calendar_today_hibg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_today_hibg@2x.png"; sourceTree = "<group>"; };
+		720C28BF190BAA1500CBE375 /* ScrollCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		720C28C2190BAA1500CBE375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		720C28C4190BAA1500CBE375 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		720C28C6190BAA1500CBE375 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		720C28C8190BAA1500CBE375 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		720C28CC190BAA1500CBE375 /* ScrollCalendar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollCalendar-Info.plist"; sourceTree = "<group>"; };
+		720C28CE190BAA1500CBE375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		720C28D0190BAA1500CBE375 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		720C28D2190BAA1500CBE375 /* ScrollCalendar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrollCalendar-Prefix.pch"; sourceTree = "<group>"; };
+		720C28D3190BAA1500CBE375 /* WPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPAppDelegate.h; sourceTree = "<group>"; };
+		720C28D4190BAA1500CBE375 /* WPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAppDelegate.m; sourceTree = "<group>"; };
+		720C28D7190BAA1500CBE375 /* ScrollCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScrollCalendar.xcdatamodel; sourceTree = "<group>"; };
+		720C28D9190BAA1500CBE375 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		720C28DF190BAA1500CBE375 /* ScrollCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		720C28E0190BAA1500CBE375 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		720C28E9190BAA1500CBE375 /* ScrollCalendarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollCalendarTests-Info.plist"; sourceTree = "<group>"; };
+		720C28EB190BAA1500CBE375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		720C28ED190BAA1500CBE375 /* ScrollCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollCalendarTests.m; sourceTree = "<group>"; };
+		720C28F8190BAA4800CBE375 /* ADScrollCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScrollCalendar.h; sourceTree = "<group>"; };
+		720C28F9190BAA4800CBE375 /* ADScrollCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScrollCalendar.m; sourceTree = "<group>"; };
+		720C28FA190BAA4800CBE375 /* CalendarDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDateUtil.h; sourceTree = "<group>"; };
+		720C28FB190BAA4800CBE375 /* CalendarDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDateUtil.m; sourceTree = "<group>"; };
+		720C28FE190BAA5500CBE375 /* WPRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPRootViewController.h; sourceTree = "<group>"; };
+		720C28FF190BAA5500CBE375 /* WPRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPRootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		720C28BC190BAA1500CBE375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720C28C5190BAA1500CBE375 /* CoreGraphics.framework in Frameworks */,
+				720C28C9190BAA1500CBE375 /* CoreData.framework in Frameworks */,
+				720C28C7190BAA1500CBE375 /* UIKit.framework in Frameworks */,
+				720C28C3190BAA1500CBE375 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720C28DC190BAA1500CBE375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720C28E1190BAA1500CBE375 /* XCTest.framework in Frameworks */,
+				720C28E4190BAA1500CBE375 /* CoreData.framework in Frameworks */,
+				720C28E3190BAA1500CBE375 /* UIKit.framework in Frameworks */,
+				720C28E2190BAA1500CBE375 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		720C28B6190BAA1400CBE375 = {
+			isa = PBXGroup;
+			children = (
+				720C28CA190BAA1500CBE375 /* ScrollCalendar */,
+				720C28E7190BAA1500CBE375 /* ScrollCalendarTests */,
+				720C28C1190BAA1500CBE375 /* Frameworks */,
+				720C28C0190BAA1500CBE375 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		720C28C0190BAA1500CBE375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				720C28BF190BAA1500CBE375 /* ScrollCalendar.app */,
+				720C28DF190BAA1500CBE375 /* ScrollCalendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		720C28C1190BAA1500CBE375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				720C28C2190BAA1500CBE375 /* Foundation.framework */,
+				720C28C4190BAA1500CBE375 /* CoreGraphics.framework */,
+				720C28C6190BAA1500CBE375 /* UIKit.framework */,
+				720C28C8190BAA1500CBE375 /* CoreData.framework */,
+				720C28E0190BAA1500CBE375 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		720C28CA190BAA1500CBE375 /* ScrollCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				720C28D3190BAA1500CBE375 /* WPAppDelegate.h */,
+				720C28D4190BAA1500CBE375 /* WPAppDelegate.m */,
+				720C28FE190BAA5500CBE375 /* WPRootViewController.h */,
+				720C28FF190BAA5500CBE375 /* WPRootViewController.m */,
+				720C28D9190BAA1500CBE375 /* Images.xcassets */,
+				720C28F7190BAA4800CBE375 /* CustomeScrollCalendar */,
+				720C28D6190BAA1500CBE375 /* ScrollCalendar.xcdatamodeld */,
+				720C28CB190BAA1500CBE375 /* Supporting Files */,
+			);
+			path = ScrollCalendar;
+			sourceTree = "<group>";
+		};
+		720C28CB190BAA1500CBE375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				720C28CC190BAA1500CBE375 /* ScrollCalendar-Info.plist */,
+				720C28CD190BAA1500CBE375 /* InfoPlist.strings */,
+				720C28D0190BAA1500CBE375 /* main.m */,
+				720C28D2190BAA1500CBE375 /* ScrollCalendar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		720C28E7190BAA1500CBE375 /* ScrollCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				720C28ED190BAA1500CBE375 /* ScrollCalendarTests.m */,
+				720C28E8190BAA1500CBE375 /* Supporting Files */,
+			);
+			path = ScrollCalendarTests;
+			sourceTree = "<group>";
+		};
+		720C28E8190BAA1500CBE375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				720C28E9190BAA1500CBE375 /* ScrollCalendarTests-Info.plist */,
+				720C28EA190BAA1500CBE375 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		720C28F7190BAA4800CBE375 /* CustomeScrollCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				720C28F8190BAA4800CBE375 /* ADScrollCalendar.h */,
+				720C28F9190BAA4800CBE375 /* ADScrollCalendar.m */,
+				720C28FA190BAA4800CBE375 /* CalendarDateUtil.h */,
+				720C28FB190BAA4800CBE375 /* CalendarDateUtil.m */,
+				5FB000F619C1C8600003A249 /* calendar_selected_bg@2x.png */,
+				5FB000F719C1C8600003A249 /* calendar_today_bg@2x.png */,
+				5FB000F819C1C8600003A249 /* calendar_today_hibg@2x.png */,
+			);
+			path = CustomeScrollCalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		720C28BE190BAA1500CBE375 /* ScrollCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720C28F1190BAA1500CBE375 /* Build configuration list for PBXNativeTarget "ScrollCalendar" */;
+			buildPhases = (
+				720C28BB190BAA1500CBE375 /* Sources */,
+				720C28BC190BAA1500CBE375 /* Frameworks */,
+				720C28BD190BAA1500CBE375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollCalendar;
+			productName = ScrollCalendar;
+			productReference = 720C28BF190BAA1500CBE375 /* ScrollCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		720C28DE190BAA1500CBE375 /* ScrollCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720C28F4190BAA1500CBE375 /* Build configuration list for PBXNativeTarget "ScrollCalendarTests" */;
+			buildPhases = (
+				720C28DB190BAA1500CBE375 /* Sources */,
+				720C28DC190BAA1500CBE375 /* Frameworks */,
+				720C28DD190BAA1500CBE375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				720C28E6190BAA1500CBE375 /* PBXTargetDependency */,
+			);
+			name = ScrollCalendarTests;
+			productName = ScrollCalendarTests;
+			productReference = 720C28DF190BAA1500CBE375 /* ScrollCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		720C28B7190BAA1400CBE375 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = wangpeng;
+				TargetAttributes = {
+					720C28DE190BAA1500CBE375 = {
+						TestTargetID = 720C28BE190BAA1500CBE375;
+					};
+				};
+			};
+			buildConfigurationList = 720C28BA190BAA1400CBE375 /* Build configuration list for PBXProject "ScrollCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 720C28B6190BAA1400CBE375;
+			productRefGroup = 720C28C0190BAA1500CBE375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				720C28BE190BAA1500CBE375 /* ScrollCalendar */,
+				720C28DE190BAA1500CBE375 /* ScrollCalendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		720C28BD190BAA1500CBE375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB000F919C1C8600003A249 /* calendar_selected_bg@2x.png in Resources */,
+				5FB000FB19C1C8600003A249 /* calendar_today_hibg@2x.png in Resources */,
+				720C28CF190BAA1500CBE375 /* InfoPlist.strings in Resources */,
+				720C28DA190BAA1500CBE375 /* Images.xcassets in Resources */,
+				5FB000FA19C1C8600003A249 /* calendar_today_bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720C28DD190BAA1500CBE375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720C28EC190BAA1500CBE375 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		720C28BB190BAA1500CBE375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720C28D8190BAA1500CBE375 /* ScrollCalendar.xcdatamodeld in Sources */,
+				720C28FD190BAA4800CBE375 /* CalendarDateUtil.m in Sources */,
+				720C28D1190BAA1500CBE375 /* main.m in Sources */,
+				720C28D5190BAA1500CBE375 /* WPAppDelegate.m in Sources */,
+				720C28FC190BAA4800CBE375 /* ADScrollCalendar.m in Sources */,
+				720C2900190BAA5500CBE375 /* WPRootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720C28DB190BAA1500CBE375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720C28EE190BAA1500CBE375 /* ScrollCalendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		720C28E6190BAA1500CBE375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 720C28BE190BAA1500CBE375 /* ScrollCalendar */;
+			targetProxy = 720C28E5190BAA1500CBE375 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		720C28CD190BAA1500CBE375 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				720C28CE190BAA1500CBE375 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		720C28EA190BAA1500CBE375 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				720C28EB190BAA1500CBE375 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		720C28EF190BAA1500CBE375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		720C28F0190BAA1500CBE375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		720C28F2190BAA1500CBE375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollCalendar/ScrollCalendar-Prefix.pch";
+				INFOPLIST_FILE = "ScrollCalendar/ScrollCalendar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		720C28F3190BAA1500CBE375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollCalendar/ScrollCalendar-Prefix.pch";
+				INFOPLIST_FILE = "ScrollCalendar/ScrollCalendar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		720C28F5190BAA1500CBE375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrollCalendar.app/ScrollCalendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollCalendar/ScrollCalendar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ScrollCalendarTests/ScrollCalendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		720C28F6190BAA1500CBE375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrollCalendar.app/ScrollCalendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollCalendar/ScrollCalendar-Prefix.pch";
+				INFOPLIST_FILE = "ScrollCalendarTests/ScrollCalendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		720C28BA190BAA1400CBE375 /* Build configuration list for PBXProject "ScrollCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720C28EF190BAA1500CBE375 /* Debug */,
+				720C28F0190BAA1500CBE375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720C28F1190BAA1500CBE375 /* Build configuration list for PBXNativeTarget "ScrollCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720C28F2190BAA1500CBE375 /* Debug */,
+				720C28F3190BAA1500CBE375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720C28F4190BAA1500CBE375 /* Build configuration list for PBXNativeTarget "ScrollCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720C28F5190BAA1500CBE375 /* Debug */,
+				720C28F6190BAA1500CBE375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		720C28D6190BAA1500CBE375 /* ScrollCalendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				720C28D7190BAA1500CBE375 /* ScrollCalendar.xcdatamodel */,
+			);
+			currentVersion = 720C28D7190BAA1500CBE375 /* ScrollCalendar.xcdatamodel */;
+			path = ScrollCalendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 720C28B7190BAA1400CBE375 /* Project object */;
+}
